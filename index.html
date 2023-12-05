@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEVIN DEL ROSARIO</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+       <!--Esta linea sirve para que funcione el modal-->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+   <!--Esta linea sirve para que funcione el modal FIN-->
+</head>
+
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Kevin</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi"onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills"onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portafolio"onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto"onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive"onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SESION INICIO-->
+
+    <section class="inicio" id="inicio">
+        <div class="contenido-banner">
+            <div class="contenido-img">
+                <img src="img/portada.jfif" alt="">
+            </div>
+            <div>
+                <h1>Kevin del Rosario</h1>
+                <h2>Programador Backend -Java/ Kotlin/ SQL</h2>
+            </div>
+            <div class="redes">
+                <a href="https://github.com/kevindelrosario"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kevin-montero-del-rosario-248384177/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--SESION SOBRE MI-->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MÍ</h2>
+            <p><span>Hola, soy Kevin del Rosario</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid aliquam, corporis, numquam amet eaque animi error quidem provident laudantium qui cumque
+                corrupti adipisci doloribus perspiciatis perferendis odit quaerat atque rerum.</p>
+        </div>
+        <!--Boton descargar curriculum-->
+        <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+    </section>
+
+    <!-- SECCION SKILLS-->
+    <section class="wrapper2" id="skills">
+            <h2>HABILIDADES</h2>
+        <ul>
+            <li class="android"><img src="logos/icons8-logotipo-de-java-coffee-cup-96.png" alt="">
+                <p>JAVA</p>
+            </li>
+            <li class="android"><img src="logos/icons8-android-studio-96.png" alt="">
+                <p>KOTLIN</p>
+            </li>
+            <li class="android"><img src="logos/icons8-logo-de-mysql-96.png" alt="">
+                <p>MSQL</p>
+            </li>
+            <li class="android"><img src="logos/icons8-github-96.png" alt="">
+                <p>GIT</p>
+            </li>
+            <li class="android"><img src="logos/icons8-css3-96.png" alt="">
+                <p>CSS3</p>
+            </li>
+            <li class="android"><img src="logos/icons8-html-5-96.png" alt="">
+                <p>HTML 5</p>
+            </li>
+            <li class="android"><img src="logos/icons8-oreja-96.png" alt="">
+                <p>BOOTSTRAP</p>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- SECCION PORTAFOLIO-->
+
+    <section class="portafolio" id="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                       <!--Proyecto-->
+                       <div class="proyecto">
+                        <img src="img/fondo.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografia</p>
+                        </div>
+                    </div>
+                        <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                            <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                            <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                            <!--Proyecto-->
+                <div class="proyecto">
+                    <img src="img/fondo.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/kevindelrosario"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kevin-montero-del-rosario-248384177/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
